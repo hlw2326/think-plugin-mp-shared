@@ -1,0 +1,36 @@
+{
+    "type": "think-admin-plugin",
+    "name": "hlw2326/think-plugin-mp-shared",
+    "homepage": "https://www.hlw2326.com",
+    "description": "ThinkAdmin 小程序插件共享组件",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "hlw2326",
+            "email": "1608626143@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "ext-json": "*",
+        "topthink/framework": "^6.0|^8.0",
+        "zoujingli/think-library": "^6.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "hlw2326\\mp\\shared\\": "src"
+        }
+    },
+    "extra": {
+        "think": {
+            "services": []
+        },
+        "config": {
+            "type": "shared",
+            "name": "小程序插件共享",
+            "document": "https://www.hlw2326.com",
+            "description": "小程序插件共享组件，被各插件依赖",
+            "license": []
+        }
+    }
+}
